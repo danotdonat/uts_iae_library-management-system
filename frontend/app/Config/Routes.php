@@ -5,13 +5,6 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// $routes->get('/', 'Home::index');
-$routes->get('/', 'LibraryController::index');
-$routes->get('/create', 'LibraryController::create');
-$routes->post('/store', 'LibraryController::store');
-$routes->get('/delete/(:num)', 'LibraryController::delete/$1');
-
-// app/Config/Routes.php
 
 // Arahkan halaman utama ke LibraryController
 $routes->get('/', 'LibraryController::index'); 
